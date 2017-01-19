@@ -28,7 +28,6 @@ def main():
         i = 0
         token = ""
         while i < int(args.level):
-            i += 1
             token = token + "#"
             s = "^" + token + " "
 
@@ -38,8 +37,11 @@ def main():
                 item = h.lstrip().rstrip()
                 l = item.replace(' ', '-').lower()
                 link = re.sub("-+", "-", l)
-                entry = "- [" + item + "](" + token + link + ")"
+                space = " "
+                s = space * i
+                entry = s + "- [" + item + "](" + token + link + ")"
                 toc.append(entry)
+            i += 1
 
     for t in toc:
         print(t)
