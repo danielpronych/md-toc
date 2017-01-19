@@ -1,6 +1,6 @@
 # md-toc
 
-Generate table of contents (toc) from a markdown files. 
+Generate table of contents (toc) from a markdown file. 
 
 **NOTE:** Currently only the `#` header markers are supported.
 
