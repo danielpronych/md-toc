@@ -4,6 +4,7 @@ Generate table of contents (toc) from a markdown files.
 
 **NOTE:** Currently only the `#` header markers are supported.
 
+```
 usage: md-toc.py [-h] [-l LEVEL] file
 
 positional arguments:
@@ -14,3 +15,4 @@ optional arguments:
   -l LEVEL, --level LEVEL
                         Number of header levels to inclue
 
+```
