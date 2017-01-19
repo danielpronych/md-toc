@@ -39,7 +39,7 @@ def main():
                 link = re.sub("-+", "-", l)
                 space = " "
                 s = space * i
-                entry = s + "- [" + item + "](" + token + link + ")"
+                entry = s + "- [" + item + "](#" + link + ")"
                 toc.append(entry)
             i += 1
 
