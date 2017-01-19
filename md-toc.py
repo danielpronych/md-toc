@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-Generate table of contents (toc) from a markdown files
+Generate table of contents (toc) from a markdown file
 """
 from __future__ import print_function
 import argparse
