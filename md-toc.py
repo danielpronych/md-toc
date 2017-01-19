@@ -36,10 +36,12 @@ def main():
             if m is not None:
                 s, h = line.split(token)
                 item = h.lstrip().rstrip()
-                link = item.replace(' ', '-').lower()
+                l = item.replace(' ', '-').lower()
+                link = re.sub("-+", "-", l)
                 entry = "- [" + item + "](" + token + link + ")"
                 toc.append(entry)
 
-    print(toc)
+    for t in toc:
+        print(t)
 if __name__ == "__main__":
     main()
